@@ -1,10 +1,42 @@
-// variables needed: wins, losses, game value, user total score, crystal 1, crystal 2, crystal 3, crystal 4
-
 // process for game loop
-// randomly generate value of jewel 1, jewel 2, jewel 3, jewel 4 values (number between 1-12)
-// randomly generate game value (number between 19-120)
-// on click function for each jewel that adds its number to game value
-// game is over when user total score equals or is larger than game value
+
+// set variables for win count, loss count, game score, user score, and crystals one, two, three and four
+var winCount = 0;
+var lossCount = 0;
+var gameScore = 0;
+var userScore = 0;
+var crystalOne = 0;
+var crystalTwo = 0;
+var crystalThree = 0;
+var crystalFour = 0;
+
+// create a function that sets game score to random number (between 19-120) and sets random values to crystals 1/2/3/4
+function reset() {
+  var gameScore = Math.floor(Math.random() * 102) + 19; // creates random number between 19-120
+  var userScore = 0;
+  var crystalOne = Math.floor(Math.random() * 12) + 1; // creates random number between 1-12
+  var crystalTwo = Math.floor(Math.random() * 12) + 1; // creates random number between 1-12
+  var crystalThree = Math.floor(Math.random() * 12) + 1; // creates random number between 1-12
+  var crystalFour = Math.floor(Math.random() * 12) + 1; // creates random number between 1-12
+  console.log(gameScore);
+  console.log(userScore);
+  console.log(crystalOne);
+  console.log(crystalTwo);
+  console.log(crystalThree);
+  console.log(crystalFour);
+}
+
+reset();
+
+// console.log(gameScore);
+// console.log(userScore);
+// console.log(crystalOne);
+// console.log(crystalTwo);
+// console.log(crystalThree);
+// console.log(crystalFour);
+
+// on click function for each jewel that adds its number to user score
+// create a function for game play that involves if statement
 // if user score is less than game value, continue
 // if user score is equal to game value, log win for user and restart
 // if user score is more than game value, log loss for user and restart
