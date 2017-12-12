@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
   // process for game loop
     var winCount = 0; // counter for game wins
     $("#wScore").text("Wins: " + winCount);
@@ -20,12 +21,12 @@ $(document).ready(function() {
 
   // resets the values of the game
   function resetGame() {
-    var userScore = 0;
-    var gameScore = Math.floor(Math.random() * 102) + 19; // creates game score, a random number between 19-120
-    var crystalOne = Math.floor(Math.random() * 12) + 1; // creates crystal 1 value, a random number between 1-12
-    var crystalTwo = Math.floor(Math.random() * 12) + 1; // creates crystal 2 value, a random number between 1-12
-    var crystalThree = Math.floor(Math.random() * 12) + 1; // creates crystal 3 value, a random number between 1-12
-    var crystalFour = Math.floor(Math.random() * 12) + 1; // creates crystal 4 value, a random number between 1-12
+    userScore = 0;
+    gameScore = Math.floor(Math.random() * 102) + 19; // creates game score, a random number between 19-120
+    crystalOne = Math.floor(Math.random() * 12) + 1; // creates crystal 1 value, a random number between 1-12
+    crystalTwo = Math.floor(Math.random() * 12) + 1; // creates crystal 2 value, a random number between 1-12
+    crystalThree = Math.floor(Math.random() * 12) + 1; // creates crystal 3 value, a random number between 1-12
+    crystalFour = Math.floor(Math.random() * 12) + 1; // creates crystal 4 value, a random number between 1-12
     $("#gScore").text("Game Score: " + gameScore);
     $("#uScore").text("User Score: " + userScore);
     console.log(gameScore);
