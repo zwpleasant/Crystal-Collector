@@ -55,8 +55,9 @@ h2 {
   margin: 20px;
   padding: 10px;
 }
-#crystal1 {
-  background-image: url(../images/blue_diamond.png);
+.btn {
+  height: 150px;
+  width: 150px;
 }
 #uScore {
   background-color: #29a3a3;
